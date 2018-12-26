@@ -1,3 +1,7 @@
+"""
+Captures 20 pictures pictures for callibration (or any) purpose
+save to data directory
+"""
 from pyueye import ueye
 import numpy as np
 import time
@@ -69,15 +73,11 @@ if __name__=="__main__":
         count+=1
         img = cap()
         cv2.imshow('ueye', img)
-        cv2.imwrite('data/'+str(count)+'.jpg',img)
+        cv2.imwrite('../calib/'+str(count)+'.jpg',img)
         cv2.waitKey(0)
-    #cmd.mv_deg("-30 15 50 25 90 0")
-    #img = cap()
 
     cv2.destroyAllWindows()
     
-
-
     # cleanup
     ueye.is_FreeImageMem(hcam, mem_ptr, mem_id)
     ueye.is_StopLiveVideo(hcam, ueye.IS_FORCE_VIDEO_STOP)
