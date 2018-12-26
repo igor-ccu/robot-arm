@@ -1,0 +1,7 @@
+/home/lung-sheng/桌面/TM_Robot/CMakeFiles/install.dir
+/home/lung-sheng/桌面/TM_Robot/CMakeFiles/list_install_components.dir
+/home/lung-sheng/桌面/TM_Robot/CMakeFiles/rebuild_cache.dir
+/home/lung-sheng/桌面/TM_Robot/CMakeFiles/test_tm_driver.dir
+/home/lung-sheng/桌面/TM_Robot/CMakeFiles/install/strip.dir
+/home/lung-sheng/桌面/TM_Robot/CMakeFiles/install/local.dir
+/home/lung-sheng/桌面/TM_Robot/CMakeFiles/edit_cache.dir

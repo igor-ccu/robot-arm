@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/lung-sheng/桌面/test_tm_driver/build",
+  "command": "/usr/bin/c++     -std=c++11 -pthread -g   -o CMakeFiles/test_tm_driver.dir/src/tm_print.cpp.o -c /home/lung-sheng/桌面/test_tm_driver/src/tm_print.cpp",
+  "file": "/home/lung-sheng/桌面/test_tm_driver/src/tm_print.cpp"
+},
+{
+  "directory": "/home/lung-sheng/桌面/test_tm_driver/build",
+  "command": "/usr/bin/c++     -std=c++11 -pthread -g   -o CMakeFiles/test_tm_driver.dir/src/tm_robot_state_rt.cpp.o -c /home/lung-sheng/桌面/test_tm_driver/src/tm_robot_state_rt.cpp",
+  "file": "/home/lung-sheng/桌面/test_tm_driver/src/tm_robot_state_rt.cpp"
+},
+{
+  "directory": "/home/lung-sheng/桌面/test_tm_driver/build",
+  "command": "/usr/bin/c++     -std=c++11 -pthread -g   -o CMakeFiles/test_tm_driver.dir/src/tm_communication.cpp.o -c /home/lung-sheng/桌面/test_tm_driver/src/tm_communication.cpp",
+  "file": "/home/lung-sheng/桌面/test_tm_driver/src/tm_communication.cpp"
+},
+{
+  "directory": "/home/lung-sheng/桌面/test_tm_driver/build",
+  "command": "/usr/bin/c++     -std=c++11 -pthread -g   -o CMakeFiles/test_tm_driver.dir/src/tm_driver.cpp.o -c /home/lung-sheng/桌面/test_tm_driver/src/tm_driver.cpp",
+  "file": "/home/lung-sheng/桌面/test_tm_driver/src/tm_driver.cpp"
+},
+{
+  "directory": "/home/lung-sheng/桌面/test_tm_driver/build",
+  "command": "/usr/bin/c++     -std=c++11 -pthread -g   -o CMakeFiles/test_tm_driver.dir/test_tm_driver.cpp.o -c /home/lung-sheng/桌面/test_tm_driver/test_tm_driver.cpp",
+  "file": "/home/lung-sheng/桌面/test_tm_driver/test_tm_driver.cpp"
+}
+]
