@@ -73,7 +73,7 @@ if __name__=="__main__":
         count+=1
         img = cap()
         cv2.imshow('ueye', img)
-        cv2.imwrite('../calib/'+str(count)+'.jpg',img)
+        cv2.imwrite('../../calib/'+str(count)+'.jpg',img)
         cv2.waitKey(0)
 
     cv2.destroyAllWindows()

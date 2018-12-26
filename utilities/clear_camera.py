@@ -1,3 +1,8 @@
+"""
+Tries to reinitialize camera in case you get errors.
+This happens sometimes when you don't close your camera properly.
+Usually replugging USB is enough.
+"""
 from pyueye import ueye
 #Initialize camera
 hcam = ueye.HIDS(0)
