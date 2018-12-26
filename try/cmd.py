@@ -16,14 +16,30 @@ def sums_up2_90(s):
     return int(angle[1])+int(angle[2])+int(angle[3])==90
 
 def execute(operation, delay=3):
-        f = open("commend.txt", "w+")
-        f.write(operation)
-        f.flush()
-        print("Executing {} (delay {} s)".format(operation, delay))
-        time.sleep(delay)
+    """ execute raw command from manual, e.g.
+    digop 8 0 0
+    """
+    f = open("commend.txt", "w+")
+    f.write(operation)
+    f.flush()
+    print("Executing {} (delay {} s)".format(operation, delay))
+    time.sleep(delay)
 
 
 def event(operation, delay=3):
+    """>> clr
+    clears errors
+    >> grip_open, grip_close
+    gripper switches
+    >> light_on, light_off
+    light switches
+    >> teach_mode_on, teach_mode_off
+    teach mode switches (you can move robot by pressing button on your own in this mode)
+    >> init_pos
+    moves to initial position (0 15 50 25 90 0)
+    >> go_zero
+    all angles 0 (0 0 0 0 0 0)
+    """
     switcher = {
         'clr':"cmdc0",
         'grip_open':"digop 8 0 0",
@@ -68,4 +84,6 @@ def mv_deg(deg="0 30 45 15 90 0", delay=3):
     return
 
 def mv_xyz():
+    """needs to be written!!! 
+    this is exteremly tricky to move to xyz on the robot, be careful!"""
     return

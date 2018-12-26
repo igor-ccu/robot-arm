@@ -132,7 +132,9 @@ if __name__=="__main__":
         ueye.is_FreeImageMem(hcam, mem_ptr, mem_id)
         ueye.is_StopLiveVideo(hcam, ueye.IS_FORCE_VIDEO_STOP)
         ueye.is_ExitCamera(hcam)
+        cmd.event('go_init')
         exit()
+
 
     # (..........)
     # (..........)
@@ -145,4 +147,5 @@ if __name__=="__main__":
     ueye.is_FreeImageMem(hcam, mem_ptr, mem_id)
     ueye.is_StopLiveVideo(hcam, ueye.IS_FORCE_VIDEO_STOP)
     ueye.is_ExitCamera(hcam)
+    cmd.event('go_init')
 
