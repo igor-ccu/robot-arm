@@ -19,3 +19,6 @@ This is self-explenatory. ( :
 this is really messy
 * using new code for circles detection when scanning horizontally when looking for markers
 * testing the code on the robot obviously ( :
+
+# Driver
+To control the robot you need to download the driver [here](https://github.com/kentsai0319/test_tm_driver).
