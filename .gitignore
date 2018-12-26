@@ -109,7 +109,7 @@ Execute/src
 Execute/build
 Execute/*.cmake
 Execute/C*.txt
-Execute/commend.txt
+*commend.txt
 Execute/LICENSE
 Execute/*dirver*
 Execute/*Make*
