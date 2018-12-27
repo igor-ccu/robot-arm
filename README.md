@@ -15,10 +15,12 @@ Calibration program and photos. Also the output matrices mtx and dst.
 This is self-explenatory. ( :
 
 # What needs to be done
-* cleaning up Execute folder and the files inside!!!!!!
-this is really messy
-* using new code for circles detection when scanning horizontally when looking for markers
-* testing the code on the robot obviously ( :
+* 12/27: test new main.py on robot (try folder)
+
+
+* ~~cleaning up Execute folder and the files inside!!!!!!
+~~this is really messy
+* using new code for circles detection when scanning horizontally when looking for markers~~
 
 # Driver
 To control the robot you need to download the driver [here](https://github.com/kentsai0319/test_tm_driver).
