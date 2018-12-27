@@ -18,8 +18,8 @@ This is self-explenatory. ( :
 * 12/27: test new main.py on robot (try folder)
 
 
-* ~~ cleaning up Execute folder and the files inside!!!!!! this is really messy ~~
-* ~~ using new code for circles detection when scanning horizontally when looking for markers ~~
+* ~~cleaning up Execute folder and the files inside!!!!!! this is really messy~~
+* ~~using new code for circles detection when scanning horizontally when looking for markers~~
 
 # Driver
 To control the robot you need to download the driver [here](https://github.com/kentsai0319/test_tm_driver).
