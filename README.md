@@ -28,3 +28,9 @@ To control the robot you need to download the driver [here](https://github.com/k
 ```
 $ ./test_tm_driver 192.168.0.10
 ```
+
+* To use build_driver.sh
+```
+$ sudo chmod +x build_driver.sh
+$ sudo ./build_driver.sh
+```
