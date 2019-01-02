@@ -17,6 +17,11 @@ import cv2
 import imutils
 from pylab import *
 
+def deg2hue(color):
+    return int(color*255/360)
+
+def sv2byte(value):
+    return int(value*255/100) 
 
 def draw(img, pos):
     result = cv2.circle(img, (pos[0], pos[1]), 1, (0, 0, 255), 4)
@@ -189,7 +194,7 @@ def detector(src, obj):
             pro = []
             list = {}
             for pr1, pr2, pr3, po1 in zip(pro1, pro2, pro3, pos1):
-                pro.append(pr1 * pr2 * pr3)
+                pro.append(pr1 * pr3)
                 list.update({str(po1): str(pr1 + pr2)})
             pro3Index = pro.index(max(pro))
             outputPos = pos1[pro3Index]
@@ -198,7 +203,6 @@ def detector(src, obj):
         pos0 = [0, 30, 45]
         outputPos = pos0
         outputPro = 0
-
     src.flags.writeable = True
     return outputPos, outputPro 
 

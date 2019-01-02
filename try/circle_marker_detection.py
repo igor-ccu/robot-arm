@@ -17,6 +17,11 @@ import cv2
 import imutils
 from pylab import *
 
+def deg2hue(color):
+    return int(color*255/360)
+
+def sv2byte(value):
+    return int(value*255/100) 
 
 def draw(img, pos):
     result = cv2.circle(img, (pos[0], pos[1]), 1, (0, 0, 255), 4)
@@ -25,9 +30,27 @@ def draw(img, pos):
 def closing(src, obj):
     img_inRange = np.zeros(src.shape[:2], src.dtype)
     if obj == 'blue_circle':
-        img_inRange = cv2.inRange(src, (160, 95, 40), (190, 110, 65))
+        #img_inRange = cv2.inRange(src, (160, 95, 40), (190, 110, 65))
+        h_lower = deg2hue(240)
+        h_higher = deg2hue(260)
+        s_lower = sv2byte(65)
+        s_higher = sv2byte(75)
+        v_lower = sv2byte(65)
+        v_higher = sv2byte(72)
+        lower = (h_lower, s_lower, v_lower)
+        higher = (h_higher, s_higher, v_higher)
+        img_inRange = cv2.inRange(cv2.cvtColor(img, cv2.COLOR_BGR2HSV))
     elif obj == 'green_circle':
-        img_inRange = cv2.inRange(src, (70, 100, 35), (90, 120, 65))
+        h_lower = deg2hue(100)
+        h_higher = deg2hue(140)
+        s_lower = sv2byte(50)
+        s_higher = sv2byte(65)
+        v_lower = sv2byte(20)
+        v_higher = sv2byte(45)
+        lower = (h_lower, s_lower, v_lower)
+        higher = (h_higher, s_higher, v_higher)
+        #img_inRange = cv2.inRange(src, (70, 100, 35), (90, 120, 65))
+        img_inRange = cv2.inRange(cv2.cvtColor(img, cv2.COLOR_BGR2HSV), )
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
     image_closed = cv2.morphologyEx(img_inRange, cv2.MORPH_CLOSE, kernel)
     image_closed = cv2.morphologyEx(image_closed, cv2.MORPH_OPEN, kernel)
@@ -185,6 +208,8 @@ def detector(src, obj):
     pos1, pro1 = feature1(src, img_closed, obj)
     pro2 = feature2(src, pos1)
     pro3 = feature3(img_closed)
+    print("dupa")
+    print("{}: {}, {}, {}".format(obj, pro1, pro2, pro3))
     if pos1:
             pro = []
             list = {}
