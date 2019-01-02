@@ -104,12 +104,5 @@ venv.bak/
 .mypy_cache/
 
 #ignore the driver files
-Execute/CMakeFiles
-Execute/src
-Execute/build
-Execute/*.cmake
-Execute/C*.txt
-*commend.txt
-Execute/LICENSE
-Execute/*dirver*
-Execute/*Make*
+*test_tm_driver*
+*.sh.swp

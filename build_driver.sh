@@ -1,9 +1,5 @@
 #!/bin/bash
-tar -xzf driver.tar.gz -C /Execute /try
-cd Execute
-cmake .
-make 
-cd ../try 
+tar -xvzf driver.tar.gz
+cd test_tm_driver
 cmake .
 make
-cd ..
