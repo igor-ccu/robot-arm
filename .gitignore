@@ -104,5 +104,13 @@ venv.bak/
 .mypy_cache/
 
 #ignore the driver files
-*test_tm_driver*
+*test_tm_driver*.txt
+*test_tm_driver*CMake*
+*test_tm_driver*.cmake
+*test_tm_driver*__*
+*test_tm_driver*src
+*test_tm_driver*.cpp
+*Makefile*
+*test_tm_driver/test_tm_driver
+*pycache*
 *.sh.swp
